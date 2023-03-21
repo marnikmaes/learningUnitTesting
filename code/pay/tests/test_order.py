@@ -27,6 +27,13 @@ def test_orders_total() -> None:
     order.line_items.append(LineItem(name="test", price=100))
     order.line_items.append(LineItem(name="test", price=100))
     assert order.total == 200
+    
+# Create a test function with return value None   
+def test_order_not_paid() -> None:
+    # Create an order and test the status of the order
+    # when an order is created he status should be OPEN because the order has not been paid yet.
+    order = Order()
+    assert order.status == OrderStatus.OPEN
 
 # Create a test function with return value None   
 def test_order_pay() -> None:
