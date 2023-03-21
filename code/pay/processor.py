@@ -1,5 +1,10 @@
-from datetime import datetime
+# In this file: 
+# Validate the card by checking the luhn_checksum is correct
+# This luhn_checksum checks if the number adheres to certain conditions e.g. checking if the card is in the "future"
+# If the card is invalid a value error will be raised
+# If the card is valid the card will be charged for a certain amount
 
+from datetime import datetime
 
 class PaymentProcessor:
     def __init__(self, api_key: str) -> None:
@@ -7,7 +12,6 @@ class PaymentProcessor:
 
     def _check_api_key(self) -> bool:
         return self.api_key == "6cfb67f3-6281-4031-b893-ea85db0dce20"
-
     def charge(self, card: str, month: int, year: int, amount: int) -> None:
         if not self.validate_card(card, month, year):
             raise ValueError("Invalid card")
