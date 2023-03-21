@@ -12,3 +12,7 @@ Unit tests provide several benefits for software development:
 * **Facilitate code changes**: Unit tests provide a safety net when making changes to the code, ensuring that the changes don't introduce new bugs or break existing functionality.
 * **Increase confidence**: Unit tests give developers confidence that their code works as intended and can be integrated with other parts of the codebase.
 
+--- 
+
+A huge thank you to [ArjanCodes](https://www.youtube.com/@ArjanCodes) on YouTube for providing the start code and explaining step by step how Python unit testing works and how you can implement this in your next projects! 
+
