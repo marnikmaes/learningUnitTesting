@@ -1,4 +1,4 @@
-from order import LineItem, Order
+from order import LineItem, Order, OrderStatus
 
 #When testing the order class it is important to test: 
 # making sure that if the LineItem is empty the total of that LineItem is 0
@@ -27,4 +27,11 @@ def test_orders_total() -> None:
     order.line_items.append(LineItem(name="test", price=100))
     order.line_items.append(LineItem(name="test", price=100))
     assert order.total == 200
-    
+
+# Create a test function with return value None   
+def test_order_pay() -> None:
+    # Create an order and test the status of the order
+    # when an order is paid (done with order.pay()) the status should be PAID
+    order = Order()
+    order.pay()
+    assert order.status == OrderStatus.PAID
