@@ -1,7 +1,10 @@
+# Example code: Point of sale system
+
 from pay.order import LineItem, Order
 from pay.payment import pay_order
 
-
+# There is a main() function to create an order with a couple of lineItems
+# In the end this main() function calls a function called pay_order()
 def main():
     # Test card number: 1249190007575069
     order = Order()
