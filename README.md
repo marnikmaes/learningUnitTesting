@@ -1,4 +1,4 @@
-# Learning Unit Testing
+# Learning Unit Testing in Python
 
 This repository is created to learn how to write unit tests in Python.
 
