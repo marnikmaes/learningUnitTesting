@@ -1,3 +1,6 @@
+#this comment serves as a SonarQube test
+
+
 from pay.order import LineItem, Order
 from pay.payment import pay_order
 
